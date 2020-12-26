@@ -25,5 +25,11 @@ course cybersecurity is the mitigation of risk of loss of confidentially, integr
 ### Mandatory
 ### Manual review
 
+# Risk = Vulnerability X Threat
 
+## Vulnerability
+
+## Threat
+
+## Risk
 
