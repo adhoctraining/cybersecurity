@@ -1,4 +1,4 @@
- [Content](https://adhoctraining.github.io/Cybersecurity/content)   [About]()
+ [Home](https://adhoctraining.github.io/Cybersecurity/home)   [About]()
 
 ***
 
