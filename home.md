@@ -1,7 +1,7 @@
 # Content
 
-### [Introduction to Cybersecurity]()
-### [Introduction to Information Assurance]()
-### [Lab 1 Linux as a System Administrator]()
+### [Lesson One Introduction to Cybersecurity]()
+### [Lesson Two Introduction to Information Assurance]()
+### [Lesson Three Lab 1 Linux as a System Administrator]()
 
 
