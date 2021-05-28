@@ -1,4 +1,4 @@
-<div align="right">### [Content]() + ### [About]()</div>
+<div align="right"> | ### [Content]() | ### [About]()</div> |
 ***
 
 # Content
