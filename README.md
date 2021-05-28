@@ -1,4 +1,3 @@
-# Introduction to Cybersecurity
 # Content
 
 ## [Introduction to Cybersecurity]()
