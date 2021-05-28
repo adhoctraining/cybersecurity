@@ -2,4 +2,4 @@
 
 ***
 
-!(https://adhoctraining.github.io/Cybersecurity/cyber_image_1.jpg)
+![](https://adhoctraining.github.io/Cybersecurity/cyber_image_1.jpg)
