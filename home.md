@@ -3,7 +3,7 @@
 ### [Lesson One Introduction to Cybersecurity]()
 ﻿Chapter 1
 Introduction
-Welcome to the course In this introduction to Cybersecurity
+Welcome to the course In this introduction to Cybersecurit
 
 	This course introduces the reader to concepts, laws, hands of activities and foundational knowledge as applied to cybersecurity. Often the terms cybersecurity and information assurance are used collective. That said they are very different. Cybersecurity is simply the securing of information as moves through a network and across the internet. one main concepts existing as part of cybersecurity is information assurance.  Information assurance is based on a security principle referred to as a the CIA. The acronym CIA stands for confidentiality, integrity and assurance. Confidentiality is the process of securing data so that information is kept private between the intended users. Integrity of the data is the assurance that that the data has not been modified and availability is the assurance that information is accessible as needed.
 
@@ -65,5 +65,175 @@ An organization information security policy should include
     It must include the employee’s roles and responsibilities to safeguard data. [1]
     
 ### [Lesson Three Linux as a System Administrator]()
+
+chapter 3
+linux
+
+
+
+chapter 4
+regulations & frameworks
+major us federal cybersecurity laws 
+
+health insurance portability and accountability act (hipaa) (1996)
+
+hipaa was enacted in 1996 and signed by president bill clinton.
+
+before hipaa, there was no standard method for safeguarding the protected personal information (ppi) that 
+organizations in the healthcare industry stored. there were no security best practices in place.  one of 
+the reasons that there were no standards related to cybersecurity in the healthcare industry was that health records were traditionally stored as paper records.
+
+just before the introduction of hipaa, the healthcare industry was scrambling to move away from paper records to become more efficient.  the need to become more efficient drove the need to access and  
+transfer patient information quickly.
+
+gramm-leach-bliley act (glba) (1999)
+
+the gramm-leach-bliley was signed into law in 1999.  this law is also known as the financial services modernization act of 1999.
+the main thing that glba did was to repeal a portion of an outdated law from 1933.  this 1933 law was called the glass–steagall act.  the glass–steagall act prevented companies from doing combined business  
+in banking, securities, and insurance.  a bank was also not allowed to sell insurance or securities.
+
+homeland security act (2002)
+
+the homeland security act was signed into law by george w. bush in 2002. this act included the federal information security management act (fisma).
+
+the united states introduced the homeland security act following several terrorist attacks in the united states.  these terrorist acts include the world trade center bombing and mailing of anthrax spores to  
+some news outlets and some government officials. [2]
+
+chapter 5
+offensive view of cybersecurity
+
+there is a term called vulnerability assessment which is quite similar to penetration testing. 
+
+what is vulnerability, risk, threat
+
+what is the diference between white hat, black hat, and grey hat.
+
+types of threat actors
+
+cyber terrorists
+government-sponsored/state-sponsored actors
+organized crime/cybercriminals 
+hacktivists
+insiders
+script kiddies
+internal user errors
+Common Threat Actor Motivations
+
+    Political, Economic, Technical, and Military Agendas: Threat actors such as Hacktivists and Government-Backed Actors share such motivations. They are focused and have a set objective/target in mind when  
+they start planning an attack. Moreover, this data is rarely seen available for sale on the black market.  For example, the absence of data stolen from the Equifax Attack has many wondering whether the  
+attack was orchestrated/sponsored by another country.
+
+    Profits/Financial Gain: The profit motivation is one of the most frequent motivations of cybercriminals. These threat actors won't usually care about penetrating a specific organization or  
+business.Moreover, they won't care about the discoverability of the crime because they're only interested in stealing assets that they can convert into money as soon as possible.
+
+    Notoriety: Some threat actors are motivated by reputation and attention and will actively seek targets that will help them gain recognition. In fact, those agents that seek notoriety will often ignore  
+chances to attack non-visible assets/targets that won't draw any attention.
+
+    Revenge: Getting back at someone is a pervasive human trait; it's also a common threat actor motivation. The threat actors who plan an attack for revenge are most likely to be either employees or ex- 
+employees -- giving them intimate knowledge about an organization's systems, networks, and even defenses.
+
+    Overlap of Motivations: Of course, a threat actor may be motivated by more than one threat actor motivation. For example, they can have a revenge mindset along with a political agenda.
+
+Understanding threat actors and their motivations is an essential step in the cybersecurity process. It will help you map out your defenses and may help you better outmaneuver attackers successfully. 
+
+Make sure that your organization's threat model accounts for various threat actor motivations. You can do this by assessing what business category you fall into and what kind of threat actors are most likely  
+to target you. Use this information as a guide to fixing vulnerabilities, uncovering new ones, and implementing internal security policies. You can get the latest info about emerging attacks here.
+
+Now we should say that some threat actors aren't discovered by anyone for even years at a time, simply because they don't draw attention to themselves. These threats are called Advanced Persistent Threats  
+(APTs). 
+
+Threat Intelligence Feeds that grant you access to information about newly-discovered Advanced Persistent Threats (APTs) are particularly useful when it comes to protecting yourself against such persistent  
+threats. 
+
+
+Chapter 6
+Methods of attack
+
+Reconnaissance/Footprinting
+     In general, reconnaissance relies upon a composite set of techniques and processes and has not to be considered limited to information characterizing the target at a technological level, such as, the used  
+hardware or the version of software components. Attackers also aim at collecting details related to the physical location of the victim, phone numbers, names of the people working in the targeted  
+organizations and their email addresses. In fact, any bit of knowledge may be used to develop a software exploit or to reveal weaknesses in the defensive systems.
+
+Information Gathering and getting to know the target systems is the first process in ethical hacking. Reconnaissance is a set of processes and techniques (Footprinting, Scanning & Enumeration) used to  
+covertly discover and collect information about a target system.
+
+Reconnaissance:
+
+This is the first step of Hacking. It is also called as Footprinting and information gathering Phase. This is the preparatory phase where we collect as much information as possible about the target. We usually collect information about three groups,
+
+Network
+
+Host
+
+People involved
+
+There are two types of Footprinting:
+
+Active: Directly interacting with the target to gather information about the target. Eg Using Nmap tool to scan the target
+
+Passive: Trying to collect the information about the target without directly accessing the target. This involves collecting information from social media, public websites etc.
+
+
+ Scanning:
+
+Scanning:
+
+Three types of scanning are involved:
+
+Port scanning: This phase involves scanning the target for the information like open ports, Live systems, various services running on the host.
+
+Vulnerability Scanning: Checking the target for weaknesses or vulnerabilities which can be exploited. Usually done with help of automated tools
+
+Network Mapping: Finding the topology of network, routers, firewalls servers if any, and host information and drawing a network diagram with the available information. This map may serve as a valuable piece of information throughout the haking process.
+
+
+
+Gaining Access: 
+
+. Gaining Access:
+
+This phase is where an attacker breaks into the system/network using various tools or methods. After entering into a system, he has to increase his privilege to administrator level so he can install an application he needs or modify data or hide data.
+
+
+Maintaining Access
+
+
+. Maintaining Access:
+
+Hacker may just hack the system to show it was vulnerable or he can be so mischievous that he wants to maintain or persist the connection in the background without the knowledge of the user. This can be done using Trojans, Rootkits or other malicious files. The aim is to maintain the access to the target until he finishes the tasks he planned to accomplish in that target.
+
+
+
+Clearing Tracks 
+
+. Clearing Track:
+
+No thief wants to get caught. An intelligent hacker always clears all evidence so that in the later point of time, no one will find any traces leading to him. This involves modifying/corrupting/deleting the values of Logs, modifying registry values and uninstalling all applications he used and deleting all folders he created.
+
+
+
+Chapter 7
+Building a virtual machine
+
+
+
+
+
+References
+[1]  https://www.infoguardsecurity.com/what-is-information-security-definition-principles-and-policies/
+[2]  https://cyberexperts.com/cybersecurity-laws/
+[3]  https://www.tutorialspoint.com/ethical_hacking/ethical_hacking_reconnaissance.htm
+[4]  https://www.sentinelone.com/blog/7-ways-hackers-steal-your-passwords/
+
+
+
+Other Resources
+https://decal.ocf.berkeley.edu/archives/2018-fall/labs/
+https://www.prowse.tech/lab-guides/lnsf-lab-guide-day1/
+https://github.com/awesome-selfhosted/awesome-selfhosted
+https://docs.linuxserver.io/general/awesome-lsio
+
+
+
 
 
