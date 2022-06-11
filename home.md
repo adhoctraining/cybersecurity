@@ -55,20 +55,17 @@ An organization information security policy should include
 ## 0x03 Regulations & frameworks
 Major us federal cybersecurity laws 
 
-Health Insurance Portability and Accountability Act (HIPPA) (1996)
+**Health Insurance Portability and Accountability Act (HIPPA) (1996)**
 
-HIPPA was enacted in 1996 and signed by president bill clinton.
-
-Before HIPPA, there was no standard method for safeguarding the Protected Personal Information (PPI) that 
-organizations in the healthcare industry stored. there were no security best practices in place.  one of 
+HIPPA was enacted in 1996 and signed by president bill clinton. Before HIPPA, there was no standard method for safeguarding the Protected Personal Information (PPI) that organizations in the healthcare industry stored. there were no security best practices in place.  one of 
 the reasons that there were no standards related to cybersecurity in the healthcare industry was that health records were traditionally stored as paper records. Just before the introduction of HIPPA, the healthcare industry was scrambling to move away from paper records to become more efficient.  the need to become more efficient drove the need to access and transfer patient information quickly.
 
-Gramm-Leach-Bliley Act (glba) (1999)
+**Gramm-Leach-Bliley Act GLBA) (1999)**
 
 The Gramm-Leach-Bliley was signed into law in 1999.  this law is also known as the financial services modernization act of 1999.
 the main thing that glba did was to repeal a portion of an outdated law from 1933.  This 1933 law was called the glass–steagall act.  the glass–steagall act prevented companies from doing combined business in banking, securities, and insurance.  a bank was also not allowed to sell insurance or securities.
 
-Homeland Security Act (2002)
+**Homeland Security Act (2002)**
 
 The homeland security act was signed into law by george w. bush in 2002. this act included the federal information security management act (fisma).
 The united states introduced the homeland security act following several terrorist attacks in the united states.  these terrorist acts include the world trade center bombing and mailing of anthrax spores to some news outlets and some government officials. [2]
@@ -104,11 +101,9 @@ Political, Economic, Technical, and Military Agendas: Threat actors such as Hack
 Profits/Financial Gain: The profit motivation is one of the most frequent motivations of cybercriminals. These threat actors won't usually care about penetrating a specific organization or  
 business.Moreover, they won't care about the discoverability of the crime because they're only interested in stealing assets that they can convert into money as soon as possible.
 
-Notoriety: Some threat actors are motivated by reputation and attention and will actively seek targets that will help them gain recognition. In fact, those agents that seek notoriety will often ignore  
-chances to attack non-visible assets/targets that won't draw any attention.
+Notoriety: Some threat actors are motivated by reputation and attention and will actively seek targets that will help them gain recognition. In fact, those agents that seek notoriety will often ignore chances to attack non-visible assets/targets that won't draw any attention.
 
-Revenge: Getting back at someone is a pervasive human trait; it's also a common threat actor motivation. The threat actors who plan an attack for revenge are most likely to be either employees or ex- 
-employees -- giving them intimate knowledge about an organization's systems, networks, and even defenses.
+Revenge: Getting back at someone is a pervasive human trait; it's also a common threat actor motivation. The threat actors who plan an attack for revenge are most likely to be either employees or ex-employees -- giving them intimate knowledge about an organization's systems, networks, and even defenses.
 
 Overlap of Motivations: Of course, a threat actor may be motivated by more than one threat actor motivation. For example, they can have a revenge mindset along with a political agenda.
 
@@ -122,7 +117,6 @@ Now we should say that some threat actors aren't discovered by anyone for even y
 
 Threat Intelligence Feeds that grant you access to information about newly-discovered Advanced Persistent Threats (APTs) are particularly useful when it comes to protecting yourself against such persistent  
 threats. 
-
 
 ## 0x05 Methods of attack ##
 
