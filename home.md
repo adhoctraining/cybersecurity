@@ -167,7 +167,7 @@ No thief wants to get caught. An intelligent hacker always clears all evidence s
 
 References
 [1]  https://www.infoguardsecurity.com/what-is-information-security-definition-principles-and-policies/
-[2]  https://cyberexperts.com/cybersecurity-laws/
+ [2]  https://cyberexperts.com/cybersecurity-laws/
 [3]  https://www.tutorialspoint.com/ethical_hacking/ethical_hacking_reconnaissance.htm
 [4]  https://www.sentinelone.com/blog/7-ways-hackers-steal-your-passwords/
 
