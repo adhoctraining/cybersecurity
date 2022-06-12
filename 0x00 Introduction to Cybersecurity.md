@@ -1,4 +1,4 @@
-0x00 Introduction to Cybersecurity
+## 0x00 Introduction to Cybersecurity
 
 Welcome to the course In this introduction to Cybersecurity. This course introduces the reader to concepts, laws, hands of activities and foundational knowledge as applied to cybersecurity. Often the terms cybersecurity and information assurance are used collective. That said they are very different. Cybersecurity is simply the securing of information as moves through a network and across the internet. one main concepts existing as part of cybersecurity is information assurance. Information assurance is based on a security principle referred to as a the CIA. The acronym CIA stands for confidentiality, integrity and assurance. Confidentiality is the process of securing data so that information is kept private between the intended users. Integrity of the data is the assurance that that the data has not been modified and availability is the assurance that information is accessible as needed.
 
