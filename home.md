@@ -4,10 +4,7 @@
 ### Header4
 **Bold**
 
-
-
-
-## 0x00 Introduction to Cybersecurity
+# Introduction to Cybersecurity
 
 Welcome to the course In this introduction to Cybersecurity.
 This course introduces the reader to concepts, laws, hands of activities and foundational knowledge as applied to cybersecurity. Often the terms cybersecurity and information assurance are used collective. That said they are very different. Cybersecurity is simply the securing of information as moves through a network and across the internet. one main concepts existing as part of cybersecurity is information assurance.  Information assurance is based on a security principle referred to as a the CIA. The acronym CIA stands for confidentiality, integrity and assurance. Confidentiality is the process of securing data so that information is kept private between the intended users. Integrity of the data is the assurance that that the data has not been modified and availability is the assurance that information is accessible as needed.
@@ -18,12 +15,12 @@ Lab: Something from National Cyber League.
 As technology progressed the need to pass messages secretly in a manner than would be difficult to decode was a challenge. Spies used the one time pad which assured made each encrypted note passed a unique st of encrypted information. During the war, the German used the enigma machine to relay coded messages.	
 With the development of the personal computer came this thing we refere to as the interent and with it a new st of problems emerged.
 the importance of information assurance.
-## 0x01 Introduction to Information Assurance
+## Introduction to Information Assurance
 
 Information security is a set of practices designed to keep personal data secure from unauthorized access and alteration during storing or transmitting from one place to another. Information security is designed and implemented to protect the print, electronic and other private, sensitive and personal data from unauthorized persons. It is used to protect data from being misused,  
 disclosure, destruction, modification, and disruption.
 
-**Information security vs. cybersecurity**
+**Information Assurance vs. Cybersecurity**
 
 Information security and cybersecurity may be used substitutable but are two different things. Cybersecurity is a practice used to provide security from online attacks, while information security is a specific discipline that falls under cybersecurity. Information security is focusing on network and App code.
 
@@ -49,10 +46,10 @@ An organization information security policy should include
     It should determine who has access to what data
     It must include the employee’s roles and responsibilities to safeguard data. [1]
     
-## 0x02 Linux as a System Administrator
+## Linux as a System Administrator
 
 
-## 0x03 Regulations & frameworks
+## Regulations & frameworks
 Major us federal cybersecurity laws 
 
 **Health Insurance Portability and Accountability Act (HIPPA) (1996)**
@@ -70,7 +67,7 @@ the main thing that glba did was to repeal a portion of an outdated law from 193
 The homeland security act was signed into law by george w. bush in 2002. this act included the federal information security management act (fisma).
 The united states introduced the homeland security act following several terrorist attacks in the united states.  these terrorist acts include the world trade center bombing and mailing of anthrax spores to some news outlets and some government officials. [2]
 
-## 0x04 Offensive view of cybersecurity ##
+## Offensive View of Cybersecurity ##
 
 There is a term called vulnerability assessment which is quite similar to penetration testing.
 
@@ -118,7 +115,20 @@ Now we should say that some threat actors aren't discovered by anyone for even y
 Threat Intelligence Feeds that grant you access to information about newly-discovered Advanced Persistent Threats (APTs) are particularly useful when it comes to protecting yourself against such persistent  
 threats. 
 
-## 0x05 Methods of attack ##
+## Intrusion and Data Breaches
+
+## Cryptography
+
+## Public Key Infrastructure
+
+## Firewalls
+
+## Intrusion Detection
+
+## Business Continuity
+
+
+## Methods of Attack ##
 
 **Reconnaissance/Footprinting**
 In general, reconnaissance relies upon a composite set of techniques and processes and has not to be considered limited to information characterizing the target at a technological level, such as, the used  
@@ -159,7 +169,7 @@ No thief wants to get caught. An intelligent hacker always clears all evidence s
 
 
 
-## 0x06 Building a virtual Machine ##
+## Virtual Computing nvironment ##
 
 
 
