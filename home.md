@@ -27,7 +27,17 @@ Integrity refers to maintaining data and preventing it from modifications either
 
 Availability is another basic element in information security. It is vital to make sure that your data is not accessed by unauthorized persons but only those who have permission can access it. Availability in information security means matching network and computing resources to compute data access and implement a better policy for disaster recovery purposes.
 
+Authentication
+
+Non-repudiation
+
+Access control
+
 **Information security policy**
+* Discuss the three overarching security design principles (i.e., onlyy necessary, simple, ease of use).
+* Describe the principle of least privilege as it relates to computer security.
+* Describe the principle of secuirty in depth.
+* Describe the principlemoffail secure or fail safe and false positive or false negative as it relates to ccomputer security.
 
 Information security policy is a document that an enterprise draws up, based on its specific needs and quirks. It helps to establish what data to protect and in what ways. These policies guide an organization during the decision making about procuring cybersecurity tools. It also mandates employee behavior and responsibilities.
 
@@ -45,8 +55,9 @@ In this chapter you will learn:
 In his book, The Seven Habits of Highly Effective People, Steve Covert stated the the first habit is to begin with the end in mind. 
 
 **Body of Knowledge**
-
-**Career Options**
+* Career Options
+* Certifications
+* Opportunities
 
 ## Linux as a Hacker
 
@@ -69,7 +80,7 @@ the main thing that glba did was to repeal a portion of an outdated law from 193
 The homeland security act was signed into law by george w. bush in 2002. this act included the federal information security management act (fisma).
 The united states introduced the homeland security act following several terrorist attacks in the united states.  these terrorist acts include the world trade center bombing and mailing of anthrax spores to some news outlets and some government officials. [2]
 
-## Offensive View of Cybersecurity ##
+**Vulnerabiliity**
 
 There is a term called vulnerability assessment which is quite similar to penetration testing.
 
@@ -77,21 +88,21 @@ What is vulnerability, risk, threat
 
 What is the diference between white hat, black hat, and grey hat.
 
+## Intrusion and Data Breaches
+
+* Define intrusion
+* Define data breache
+* Tyeps of instruders
+* Types of hackers
+
 **Types of threat actors**
-
-Cyber terrorists
-
-Government-sponsored/state-sponsored actors
-
-Organized crime/cybercriminals 
-
-Hacktivists
-
-Insiders
-
-Script kiddies
-
-Internal user errors
+* Cyber terrorists
+* Government-sponsored/state-sponsored actors
+* Organized crime/cybercriminals 
+* Hacktivists
+* Insiders
+* Script kiddies
+* Internal user errors
 
 **Common Threat Actor Motivations**
 
@@ -117,20 +128,53 @@ Now we should say that some threat actors aren't discovered by anyone for even y
 Threat Intelligence Feeds that grant you access to information about newly-discovered Advanced Persistent Threats (APTs) are particularly useful when it comes to protecting yourself against such persistent  
 threats. 
 
-## Intrusion and Data Breaches
+## Introduction to SIEM ##
+**Firewalls**
+**Intrusion Detection**
+* Host Based
+* Nework Based
+* Applications
 
 ## Cryptography
+**Codes and ciphers**
+**Hash Algorithms
+**Symmetric**
+**Assymetric**
 
 ## Public Key Infrastructure
+* What is PKI?
+* How is it implemented?
+* When and why was it created?
+* Who created it?
+* What is the encryption standard?
+* How is it attacked?What is a trust model and what is the difeerence?
 
-## Firewalls
+**Trust Models**
 
-## Intrusion Detection
+**Certificate Authority (CA)**
+
+**Registration Auithority (RA)**
+
+**X.509**
+
+**Root Certificate Distribution**
+
+**Revocation**
+
+**Certificate Revocation List (CRL)**
 
 ## Business Continuity
 
 
 ## Methods of Attack ##
+** Viruses and malicious code*
+* spyware
+* grayware
+* virusworms
+* logic bombs
+* botnets
+* rootkits
+* trojan horse
 
 **Reconnaissance/Footprinting**
 In general, reconnaissance relies upon a composite set of techniques and processes and has not to be considered limited to information characterizing the target at a technological level, such as, the used  
@@ -171,7 +215,7 @@ No thief wants to get caught. An intelligent hacker always clears all evidence s
 
 
 
-## Virtual Computing nvironment ##
+## Virtual Computing Environment ##
 
 
 
