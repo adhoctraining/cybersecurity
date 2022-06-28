@@ -137,9 +137,12 @@ threats.
 
 ## Cryptography
 **Codes and ciphers**
-**Hash Algorithms
+
+**Hash Algorithms**
+
 **Symmetric**
-**Assymetric**
+
+**Asymmetric**
 
 ## Public Key Infrastructure
 * What is PKI?
@@ -167,7 +170,7 @@ threats.
 
 
 ## Methods of Attack ##
-** Viruses and malicious code*
+**Viruses and malicious code**
 * spyware
 * grayware
 * viruses/worms
