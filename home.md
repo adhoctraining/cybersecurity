@@ -170,7 +170,7 @@ threats.
 ** Viruses and malicious code*
 * spyware
 * grayware
-* virusworms
+* viruses/worms
 * logic bombs
 * botnets
 * rootkits
