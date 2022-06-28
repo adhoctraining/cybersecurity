@@ -91,8 +91,8 @@ What is the diference between white hat, black hat, and grey hat.
 ## Intrusion and Data Breaches
 
 * Define intrusion
-* Define data breache
-* Tyeps of instruders
+* Define data breaches
+* Types of intruders
 * Types of hackers
 
 **Types of threat actors**
