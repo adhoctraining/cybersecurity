@@ -1,4 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+margin-left: 150px;
+margin-right: 200px;
+}
+</style>
+</head>
+<body>
 
+<div class="myDiv">
 <h2>Course Outline</h2>
 <ul>
 <li>Lesson 1 Introduction to cybersecurity</li>
@@ -114,3 +126,7 @@ https://triadanet.com/different-types-of-cyber-security/
 Penetration Testing: A Hands-On Introduction to Hacking <br>
 Red Team Field Manual<br>
 Linux Basics for Hackers: Getting Started with Networking, Scripting, and Security in Kali<br>
+
+</div>
+</body>
+</html>
