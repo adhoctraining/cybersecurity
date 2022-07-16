@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,6 +59,7 @@ body {
 /* Middle column */
 .column.middle {
   width: 40%;
+  background-color: lightyellow;
 }
 
 /* Clear floats after the columns */
@@ -74,7 +76,16 @@ body {
   }
 }
 
-ul {
+
+/* Change color on hover */
+.nav a:hover {
+ background-color: #ddd;
+  color: black;
+}
+
+
+
+ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -86,7 +97,7 @@ ul {
 li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
+  padding: 8px;
   text-decoration: none;
 }
 
@@ -105,15 +116,15 @@ li a {
  
 <div class="topnav">
   <a href="index.html">Home</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="labs.html">Labs</a>
 </div>
 
-
   <div class="column side">
+  <div class="nav a" >
  <h2>LABS</h2>
 <ul>  
-	  <li>Introduction to the Lab sandbox</li>
+	 <li> <b><a href="labs\lab_setup.html">Lab module: Introduction to the lab sandbox</a></b></li>
 	  <ol>
 		<li>Building a virtual machine</li>
 		<li>Downloading scripts</li>
@@ -121,27 +132,21 @@ li a {
 		<li>Running initialization script</li>
 		<li>sign-in</li>
 	  </ol><br>
-	  <li>Lab: Linux command line hacking</li>
+	    <li><b><a href="labs\linux.html">Lab module: Linux command line hacking</a></b></li>
 	  <ol>
 	    <li>Navigating the command line</li>
 	    <li>Processes</li>
 	    <li>users and groups</li>
 	    <li>text manipulation</li>
-	    <li>https://www.redhat.com/sysadmin/command-line-hacks</li>
-	  </ol><br>
-	  <li>Lab: Cryptography</li>
+	     </ol><br>
+	  <li><b><a href="crypto.html">Lab module: Cryptography</a></b></li>
 	  <ol>
-		<li>WATCH :https://www.youtube.com/watch?v=Yphv8--hQzU&t=4s</li>
-		<li>HINT: There will be a test. </li>
-		
 		<li>Lab: Hashing</li>
 		<li>Lab: Codes and ciphers</li>  
 		<li>Lab Steganography</li>
-		<li>WATCH: https://www.youtube.com/watch?v=AQDCe585Lnc&list=WL&index=10</li>
-		<li>WATCH: https://www.youtube.com/watch?v=E5FEqGYLL0o&list=WL&index=11</li>
 		<li>Lab: gpg</li>
 		</ol><br>
-      <li>Lab: Fundamentals of networking</li>
+      <li><b><a href="networking.html">Lab module: Fundamentals of networking</a></b></li>
 		<ol>
 			<li>Binary</li>
 			<li>Subnetting</li>
@@ -150,66 +155,63 @@ li a {
 			<li>TCP handshake (Denial of Service attack</>
 			<li>Wireshark
 		</ol>
-<ul>
-  </div>
-  
-  <div class="column middle">
- <h2>COURSE OUTLINE</h2>
-<ul>
-
-<li>Lesson  1  Introduction to cybersecurity</li><p>
-<li>Lesson  2  Information assurance</li><p>
-<li>Lesson     Laws, Cases and Indictments</li><p>
-<li>Lesson  3  Types of security</li><p>
-<li>Lesson  4  Threats, vulnerabilities and risk </li> <p>
-<li>Lesson  5  Linux fundamentals</li><p>
-<li>Lesson  6  Basic cryptographic principles</li><p>
-<li>Lesson  7  Network fundamentals</li><p>
-<li>Lesson  8  OSI model and the TCP/IP suite</li><p>
-<li>Lesson  9  Intrusion detection</li><p>
-<li>Lesson 10  Ethical hacking</li><p>
-<li>Lesson 11  Cyber attacks </li><p>
-<li>Lesson 12  Web attacks</li><p>
-<li>Lesson 13  System hardening</li><p>
-<li>Lesson 14  System patching</li><p>
-<li>Lesson 15  Wireless technologies</li><p>
-<li>Lesson 16  Virtual machines and cloud computing</li><p>
 </ul>
- 
+  </div>
+  </div>
+   <div class="column middle">
+  <div class="nav a" >
+ <h2>COURSE OUTLINE</h2>
+<ol>
 
+<li><a href="labs/cyber.html">Introduction to cybersecurity</a></li>
+<li><a href="info.html">Information assurance</a></li>
+<li><a href="law.html">Laws, cases and indictments</a></li>
+<li><a href="security.html">Types of security</a></li>
+<li><a href="threats.html">Threats, vulnerabilities and risk </a></li>
+<li><a href="linux.html">Linux fundamentals</a></li>
+<li><a href="ciphers.html">Basic cryptographic principles</a></li>
+<li><a href="networks.html">Network fundamentals</a></li>
+<li><a href="osi">OSI model and the TCP/IP suite</a></li>
+<li><a href="ids">Intrusion detection</a></li>
+<li><a href="hacking">Ethical hacking</a></li>
+<li><a href="attacks">Cyber attacks</a></li>
+<li><a href="web_attacks">Web attacks</a></li>
+<li><a href="hardening">System hardening</a></li>
+<li><a href="patching">System patching</a></li>
+<li><a href="wireless">Wireless technologies</a></li>
+<li><a href="virtual">Virtual machines and cloud computing</a></li>
+</ol>
+ 
+</div>
 </div>
   
   <div class="column side">
-    <h2>ABOUT THE COURSE</h2>
-    <p> Reference for labs. https://www.sans.org/cyber-security-courses/introduction-cyber-security/</p>
-  
-  <h3>Resources </h3>
-  <ol>
-<li>https://slidetodoc.com/the-osi-model-and-the-tcpip-protocol-suite-3/</li>
-<li>https://triadanet.com/different-types-of-cyber-security/</li>
-<li>https://activecm.github.io/threat-hunting-labs/basic_usage/</li>
-<li>https://github.com/imrk51/CEH-v11-Study-Guide</li>
-<li>https://github.com/onealmond/hacking-lab</li>
-<li>https://github.com/oliverwiegers/pentest_lab</li>
+  <div class="nav a" >
+<h2>RESOURCES</h2>
 
-Basic Docker Networking
-<li>https://linoxide.com/networking-commands-docker-containers/</li>
-
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ol>
+<ul>
+<li><a href="https://www.redhat.com/sysadmin/command-line-hacks">A sysadmin's favorite Linux history command line hack </a></li>
+<li><a href="https://www.youtube.com/watch?v=Yphv8--hQzU&t=4s"> Chasing the Cicada | The Internet’s Most Puzzling Mystery</a></li>
+<li><a href="https://www.youtube.com/watch?v=AQDCe585Lnc&list=WL&index=10"> Asymmetric Encryption - Simply explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=E5FEqGYLL0o&list=WL&index=11">How asymmetric (public key) encryption works </a></li>
+<li><a href="https://www.sans.org/cyber-security-courses/introduction-cyber-security">SEC301: Introduction to Cyber Security</a></li>
+<li><a href="https://slidetodoc.com/the-osi-model-and-the-tcpip-protocol-suite-3">The OSI model and the TCPIP protocol suite</a></li>
+<li><a href="https://triadanet.com/different-types-of-cyber-security/">What Are the Different Types of Cyber Security? </a></li>
+<li><a href="https://activecm.github.io/threat-hunting-labs/basic_usage/"> Threat Hunting Labs </a></li>
+<li><a href="https://github.com/imrk51/CEH-v11-Study-Guide">Unofficial Study Guide for CEH v11 </a></li>
+<li><a href="https://github.com/onealmond/hacking-lab">Hacking Lab </a></li>
+<li><a href="https://github.com/oliverwiegers/pentest_lab">Pentest Lab </a></li>
+<li><a href="https://linoxide.com/networking-commands-docker-containers/">Basic Networking Commands with Docker Containers </a></li>
+</ul>
 <h3>Books</h3>
-<ol>
-<li>Penetration Testing: A Hands-On Introduction to Hacking </li>
-<li>Red Team Field Manual<br>
-<li>Linux Basics for Hackers: Getting Started with Networking, Scripting, and Security in Kali</li>
-</ol>
+<ul>
+<li>Penetration Testing: A Hands-On Introduction to Hacking </li><br>
+<li>Red Team Field Manual</li><br>
+<li>Linux Basics for Hackers: Getting Started with Networking, Scripting, and Security in Kali</li><br>
+</ul>
   </div>
 </div>
-  
+ </div> 
 </body>
 </html>
-
 
