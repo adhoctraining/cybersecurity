@@ -124,8 +124,8 @@ h2 {text-align: center;}
 
 <ol>
 
-<li><a href="chapter_01.html">What is cybersecurity?</a></li>
-<li><a href="chapter_02.html">Information assurance</a></li>
+<li><a href="intro_chapter_01.html">What is cybersecurity?</a></li>
+<li><a href="intro_chapter_02.html">Information assurance</a></li>
 <li><a href="law.html">Laws, cases and indictments</a></li>
 <li><a href="security.html">Types of security</a></li>
 <li><a href="threats.html">Threats, vulnerabilities and risk </a></li>
