@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,9 +55,9 @@ body {
   width: 30%;
 }
 
-/* Right column */
-.column.right {
-  width: 60%;
+/* Middle column */
+.column.middle {
+  width: 40%;
   background-color: lightyellow;
 }
 
@@ -75,6 +74,8 @@ body {
     width: 100%;
   }
 }
+
+
 /* Change color on hover */
 .nav a:hover {
  background-color: #ddd;
@@ -82,19 +83,16 @@ body {
 }
 
 
-/* Center text */
-.nav b {
-  text-align: center;
-}
 
-ul.a {
-  list-style-position: outside;
+ ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  
+  position:
+  height: 100%;
+  overflow: auto;
 }
 
- 
 li a {
   display: block;
   color: #000;
@@ -102,14 +100,17 @@ li a {
   text-decoration: none;
 }
 
-h2 {text-align: center;}
+
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Adhoc Training</h1>
-  <h2>Introduction to Cybersecurity</h2>
+   <img src="pic01r.jpg" alt="Introduction to Cybersecurity" width="600" height="400">
+  <h1>Introduction to Cybersecurity</h1>
+  <p>Welcome to the course! This course introduces the reader to concepts, <br />
+     laws, hands on activities and foundational knowledge as <br />
+	applied to cybersecurity.</p>
  </div>
  
 <div class="topnav">
@@ -118,10 +119,58 @@ h2 {text-align: center;}
   <a href="labs.html">Labs</a>
    <a href="intro_about.html">About</a>
 </div>
-<div class="nav a" >
-  <div class="column side">
 
-<h2>Contents</h2>
+  <div class="column side">
+  <div class="nav a" >
+ <h2>LABS</h2>
+<ul>  
+	 <li> <b><a href="labs\lab_setup.html">Lab module: Introduction to the lab sandbox</a></b></li>
+	  <ol>
+		<li>Building a virtual machine</li>
+		<li>Downloading scripts</li>
+		<li>Configuring lab infrastructure</li>
+		<li>Running initialization script</li>
+		<li>sign-in</li>
+	  </ol><br>
+	    <li><b><a href="labs\linux.html">Lab module: Linux command line hacking</a></b></li>
+	  <ol>
+	    <li>Navigating the command line</li>
+	    <li>Processes</li>
+	    <li>users and groups</li>
+	    <li>text manipulation</li>
+	     </ol><br>
+	  <li><b><a href="crypto.html">Lab module: Cryptography</a></b></li>
+	  <ol>
+		<li>Lab: Hashing</li>
+		<li>Lab: Codes and ciphers</li>  
+		<li>Lab Steganography</li>
+		<li>Lab: gpg</li>
+		</ol><br>
+      <li><b><a href="networking.html">Lab module: Fundamentals of networking</a></b></li>
+		<ol>
+			<li>Binary</li>
+			<li>Subnetting</li>
+			<li>Command line tools</li>
+			<li>Ports an protocols with nmap</li>
+			<li>TCP handshake (Denial of Service attack</li>
+			<li>Wireshark</li>
+		</ol><br>
+		<li><b><a href="ceh.html">Lab module: Attack the box</a></b></li>
+		<ol>
+			<li>Fingerprinting and scanning</li>
+			<li>password attacks</li>
+			<li>Web attacks thru SQL injection</li>
+			<li>Ports an protocols with nmap</li>
+			<li>Denial of Service attack (icmp and syn flood)</li>
+			<li>Logs and log analysis</li>
+		</ol><br>
+		
+</ul>
+  </div>
+  </div>
+   <div class="column middle">
+  <div class="nav a" >
+ <h2>Contents</h2>
 <ol>
 
 <li><a href="intro_chapter_01.html">Introduction to cybersecurity</a></li>
@@ -143,53 +192,35 @@ h2 {text-align: center;}
 <li><a href="intro_chapter_17.html">Virtual machines and cloud computing</a></li>
 </ol>
  
-  </div>
-   <div class="column right">
- <h2>Title</h2>
-<p>
+</div>
+</div>
   
-	
-	
+  <div class="column side">
+  <div class="nav a" >
+<h2>RESOURCES</h2>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br> 
- 
- 
- </div>
+<ul>
+<li><a href="https://www.redhat.com/sysadmin/command-line-hacks">A sysadmin's favorite Linux history command line hack </a></li>
+<li><a href="https://www.youtube.com/watch?v=Yphv8--hQzU&t=4s"> Chasing the Cicada | The Internet’s Most Puzzling Mystery</a></li>
+<li><a href="https://www.youtube.com/watch?v=AQDCe585Lnc&list=WL&index=10"> Asymmetric Encryption - Simply explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=E5FEqGYLL0o&list=WL&index=11">How asymmetric (public key) encryption works </a></li>
+<li><a href="https://www.sans.org/cyber-security-courses/introduction-cyber-security">SEC301: Introduction to Cyber Security</a></li>
+<li><a href="https://slidetodoc.com/the-osi-model-and-the-tcpip-protocol-suite-3">The OSI model and the TCPIP protocol suite</a></li>
+<li><a href="https://triadanet.com/different-types-of-cyber-security/">What Are the Different Types of Cyber Security? </a></li>
+<li><a href="https://activecm.github.io/threat-hunting-labs/basic_usage/"> Threat Hunting Labs </a></li>
+<li><a href="https://github.com/imrk51/CEH-v11-Study-Guide">Unofficial Study Guide for CEH v11 </a></li>
+<li><a href="https://github.com/onealmond/hacking-lab">Hacking Lab </a></li>
+<li><a href="https://github.com/oliverwiegers/pentest_lab">Pentest Lab </a></li>
+<li><a href="https://linoxide.com/networking-commands-docker-containers/">Basic Networking Commands with Docker Containers </a></li>
+</ul>
+<h3>Books</h3>
+<ul>
+<li>Penetration Testing: A Hands-On Introduction to Hacking </li><br>
+<li>Red Team Field Manual</li><br>
+<li>Linux Basics for Hackers: Getting Started with Networking, Scripting, and Security in Kali</li><br>
+</ul>
+  </div>
 </div>
-</div>
-  
- 
  </div> 
 </body>
 </html>
-
