@@ -146,8 +146,62 @@ h2 {text-align: center;}
   </div>
    <div class="column right">
  <h2>OSI model and the TCP/IP suite</h2>
-<p>
-  
+
+ References
+<Blockquote>
+EDUCBA. 
+(n/a). 
+The Basic Fundamental Of networking. 
+https://www.educba.com/basic-fundamental-of-networking/.
+
+</Blockquote>
+ <p>
+
+The Basic Fundamental Of Networking Layer
+
+The Application layer is the topmost layer of the TCP and IP protocol suite in Networking. This specific layer transfers data along to computers from one end to another with the help of applications and processes that use transport layer protocols. These applications and processes carry specific instructions to execute a task and then communicate with the second layer that is the Transport Layer. Following are a few popular application layer protocols:
+
+HTTP or Hypertext transfer protocol mostly used in modern web browsers. It is the actual foundation of the World Wide Web (www). HTTP is a request and response type protocol that performs actions on behalf of the client and requests a response from the server for the same. The request may contain images, text, audio, and video in return. HTTP though it’s largely used, it is highly insecure and is the main reason it was replaced by HTTPS, Hypertext transfer protocol Secured. HTTPS was developed to authenticate the website’s certificate and protect the privacy of the data being transmitted.
+
+FTP or File transfer protocol for transferring data over various networks. FTP uses the client and server architecture model to control and transfer data between computers. By default, the server is configured to connect automatically and anonymously, but it can be configured to uses a plain text type password for authentication. However, one can even use SSL (Secure Sockets Layer), TLS (Transport Layer Security) and SSH (Secure Shell) to encrypt data that is being transferred. SSH is the most commonly used, and it uses Public Key authentication, which highly secure. SSL is also quite secure, but it, however, can be decrypted with applications like SSL strip done via a Man in the Middle attack. The most popular SSH tool for Windows is Putty, an SSH and Telnet Client, along with being open source (http://www.putty.org/).
+
+SMTP or Simple mail transfer protocol is used for the transmission of emails. SMTP is a text-based protocol that works on the TCP and IP connection. An SMTP connection consists of three things: MAIL to determine a returning address, RCTP to connect to the recipient and DATA, which is the message’s body. This DATA also consists of a message header for it to work correctly.
+
+SNMP or Simple network management protocol is an IP based protocol. SNMP collects information about the IP addresses from various machines in a consistent manner. There have been multiple versions of SNMP protocols such as the SNMPv1, SNMPv2, and the SNMPv3. Devices such as Routers, Switches, modems, and server support the SNMP protocol.
+
+The Basic Fundamental Of Networking Presentation Layer
+
+This layer converts or does the job of translating data such as character encoding like the Unicode or the UTF8, encryption/decryption and data compression between a networking device and a software application. Few examples would be of JSON, XML, HTML, CSS and many more. This Layer is more useful when doing secure transactions such as banking and transferring money to account for the data needs to be encrypted and decrypted on the go. This layer is also responsible for converting formats like the UTF8 to ASCII and similar stuff. Although the encryption and decryption can be done by other layers of the application or the session layer, each has its own set of disadvantages, and that is why this layer takes care of that. Most applications do not differentiate between the application and the presentation layer nowadays, and they are considered the same when coding and transmitting data over the network.
+The Basic Fundamental Of Networking Session Layer
+
+In Networking, the session layer is responsible for opening, closure, and managing a session for an end-user application. This session can include multiple requests and responses occurring inside the software. If disconnection occurs or if there are any packet losses, the OSI session layer Ip protocol tries to recover the connectivity, and if it fails to do so, then it tries to totally close and opens a new connection. This can either be a full or a half-duplex operation. This layer also handles the combining of packets and sorting in proper order. E.g., when you download something from Bit torrent, you see packets get downloaded, but they are not in a synchronized manner. This session layer then combines packets from different streams and allows them to be properly synchronized.
+The Basic Fundamental Of Networking Transport Layer
+
+The transport layer is the one that communicates with the application layer to transfer data to the appropriate hosts. The two most important protocols used almost everywhere at transport layers are the TCP and the UDP protocols. However, the TCP (Transmission Control Protocol) connections are more reliable when compared to the UDP (User Datagram Protocol) connections. Both have their own set of pros and cons and are used as per their requirement.
+
+The Transmission Control Protocol distributes the data received from the application layer into specifically sized chunks of data and then transfers these packets part by part into the network. It first acknowledges the packets it receives, requests acknowledgements for the packets sent, and then sets response timeouts to retransmit any packet if their acknowledgement is not received before the timeout expires. This is the main reason why this is considered a reliable connection since it takes care that every single packet transmitted is received by the opposite host. This protocol is mainly used when downloading and uploading large files since the loss in packets may result in corruption in the uploaded or the downloaded data.
+
+User Datagram Protocol, on the other hand, is much simpler but unreliable than Transmission Control Protocol. In UDP, there is no acknowledgement done for any data sent or received to and from the host. Thus there are high chances of packet drops and leaks. This is the main reason why UDP is not used where quality data transmission is required and thus, is considered unreliable. This type of protocol is mostly used in YouTube or Vimeo when streaming a video since a few packets drops won’t hamper the user experience.
+The Basic Fundamental Of Networking Network Layer
+
+This specific layer is alternatively known as the Internet Layer as well. This layer is responsible for routing data over networks, and the IP protocol is used to differentiate between addresses. The most popular ICMP and the IFMP are used in this layer. The ICMP or Internet Control Message Protocol which is used in the ping command to check whether the host is active or down, is used here. The ICMP is one of the most important protocols of the IP protocol suite. ICMP is also used to send error messages over the network about whether a host is down or is not responding or if it’s only available via the wake on Lan feature and similar stuff.
+The Basic Fundamental Of Networking Data Link Layer
+
+This layer provides the drivers for different devices present in the Operating system and is alternatively known as the Network Interface Layer. These drivers are of the NIC or the Network Interface Card present in the system. The network cards and their properly configured device drivers are responsible for communicating and transferring data onto networks. Without a network interface card, communication is not possible. This data is transferred either wirelessly via routers and Wi-Fi or via cables like the cross-wired or the RJ-45 cable. The protocols used to transfer data here are the ARP (Address Resolution Protocol) and the PPP, i.e. Point to Point Protocol.
+The Basic Fundamental Of Networking Physical Layer
+
+The Physical layer is the topmost layer in the OSI model of computer networking. This layer typically consists of networking hardware. Due to the variety of networking devices available in the market, this is probably the most complex networking layer in the OSI architecture. The job of this layer is to transfer raw bits over the physical hardware via the connecting nodes. This layer typically consists of hardware such as the wireless hardware, i.e. the Wi-Fi, the cables, the connectors, the network interface cards and many more.
+The Basic Fundamental Of Networking Ports, IP Addresses, and MAC Addresses
+
+Basics of wireless networking Now that you know how basic internet connectivity works, let’s take a look at the most important part as to how do the packets find their way to the proper hosts. Think of this IP address, ports, and the Mac address as the person’s default physical address. For example, let’s say the person Mr Smith has an Address as 21, New Wing Tower, High Roller Street. Here the MAC ID is the New Wing Tower, which is the name of the building or the society that never changes. The High Roller Street is the area or the street address, which is the IP Address here. Since there are several streets to reach a destination, this is similar to an IP Address since the IP address can change depending upon the DHCP in networking. And finally, the port is the Room Number which in our case is 21. This whole scenario works like this. Say, for example, you are about to receive a courier at your above address, but you give the wrong room number, then the courier may reach a closed room or which isn’t even there. Similarly, if a wrong port number is given to the incoming packet, then the packet may not even reach the address, the reason being the other port may be closed by a firewall, or it is already busy with some other packet connectivity in progress.
+
+Understanding the languages of networking is not that hard. It only takes a person willing to dig deeper and ready to get their hands dirty. These are just the basics of networking. You can actually learn in detail by reading about the packets transmission and how the connectivity takes place by reading the SYN and ACK methods, which I have not mentioned here. Consider learning a CCNA book, which will actually cover all the aspects of networking.
+ <p>
+ 
+ <p>
+
+<br>
+<br>
 	
 	
 
