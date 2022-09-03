@@ -1,3 +1,6 @@
+Open the command prompt and enter systeminfo.exe > c:\Desktop\systeminfo.txt. 
+<p>
+
 Things to look at regarding a slow computer:
 - Remove unsused software and bloatware
 - Look at startup programs. Use the task manager. Turn off re-boot and re-start one at a time
