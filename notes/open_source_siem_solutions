@@ -1,0 +1,287 @@
+# Introduction to log analysis with ELK
+
+In this story, I introduce the basics of log analysis and the main concepts of ELK.
+
+Log analysis helps to diagnose problems and to reduce the resolution time.
+
+Logs come mainly from OS (Operating Systems), applications, and network devices. Many logs are unstructured data (example: system logs, CPU data, configuration files, …).
+
+They are usually stored in a hard drive or sent to a log collector.
+
+Interpretation of the log messages needs to take into account the context.
+
+To analyze logs, you need identify root causes and build counter measures to reduce the risks.
+
+Architecture
+ELK (Elasticsearch Logstash Kibana) is based on three open source:
+
+Logstash: it collects, transforms, and routes log entries;
+Elasticsearch: it stores and allows to search logs;
+Kibana: is allows to visualize and analyze logs.
+Beats
+Beats are lightweight data shippers: they capture data (logs, metrics, or network packet data) and send them to Elasticsearch via Logstash.
+
+Main beats are:
+
+AuditBeat: collects data of Linux audit framework and ships the logs;
+FileBeat: tails and ships logs files;
+FunctionBeat: reads and ships events from serverless infrastructure;
+HearBeat: pings remote services (for availability);
+JournalBeat: reads and ships event from Journald;
+MetricBeat: fetches metrics from the OS and services;
+PacketBeat: sniffes packets to monitor the network and applications;
+WinlogBeat: fetches and ships Windows event logs.
+If beats are used with ELK, it’s called Elastic Stack.
+
+Logstash
+Logstash collects data inputs and feeds them to Elasticsearch.
+
+Various types of data and various sources are supported.
+
+Logstash is based on a pipeline:
+
+it gets data from data source (inputs),
+it transforms these inputs by applying rules (filters),
+it sends this result to the endpoint of Elasticsearch.
+Elasticsearch
+Elasticsearch is a distributed search engine and an analytics engine highly flexible. It’s based on a NoSQL database and it’s based on the Lucene search engine.
+
+It provides simple deployment, maximum reliability, and horizontal scalability.
+
+It uses RESTful APIs.
+
+It provides advanced queries to perform detailed analysis. Data are stored centrally for quick search.
+
+An index is a logical namespace. It allows to organize data. An index has one or more shards (5 by default).
+
+A shard is a Lucene index. It’s also a search engine and have zero or more replicas (1 by default).
+
+Kibana
+Kibana allows to visualize results of complex queries on Elasticsearch documents.
+
+The dashboard provides interactive diagrams, geospatial data, timelines, and graphs. Kibana allows to custom graphs.
+
+There are different methods to search data:
+
+Free text searches: search for a string;
+Field-level searches: search for a string within a specific field;
+Logical statements: combine searches into a logical statement;
+Proximity searches: search terms within a specific character proximity.
+
+Collins Hillary
+
+# [INSTALLING WAZUH SERVER ON LINUX (UBUNTU 20.04.1)](https://medium.com/@collinshillary1/installing-wazuh-server-on-linux-ubuntu-20-04-1-2d7d04047b93)
+## Collins Hillary
+
+In our previous article, we learned how we can install a wazuh agent which is used to collect logs and ship them to the wazuh server for visualization and analyzing.
+
+In this article we are going to learn how to install a wazuh server on ubuntu.
+
+Wazuh Server is the system that analyzes the data received from all registered agents and triggers alerts when an event coincides with a rule.
+
+For example, intrusion detected, file modified, configuration not in accordance with the policy, possible rootkit, among others.
+
+The manager also works as an agent on the local machine, which means that it has all the features that an agent has. In addition, the manager can forward the alerts that it triggers through Syslog, emails, or integrated external APIs.
+
+You can install the Wazuh server on a single host. Alternatively, you can install it distributed in multiple nodes in a cluster configuration. Multi-node configurations provide high availability and improved performance. And if combined with a network load balancer an efficient use of its capacity can be achieved.
+
+Installing Wazuh Server
+You can install the wazuh server in the following ways:
+
+Wazuh installation assistant: Install this component by running an assistant that automates the installation and configuration process.
+Step-by-step installation: Install this component following detailed step-by-step instructions.
+For this scenario, we are going to be using the step-by-step installation guide.
+
+The Wazuh server is a central component that includes the Wazuh manager and Filebeat.
+
+For us to be able to have a better visualization for this tutorial we are going to integrate wazuh with ELK Stack.
+
+Kibana, for visualization
+Elasticsearch, for data storage and search engine
+Filebeat for collecting Wazuh manager event data and pushing them to Elasticsearch search engine.
+ELK Stack will be discussed in a different article that will cover it in depth.
+
+Install Elastic Stack (ELK)on Ubuntu
+To install Elastic Stack APT repositories on Ubuntu run the following command:
+
+apt install apt-transport-https -y
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch \ | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/elastic.gpg
+echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" \
+> /etc/apt/sources.list.d/elastic-7.x.list
+apt update
+Install Elasticsearch 7.10.2 on Ubuntu using the following command:
+
+apt install elasticsearch=7.10.2
+Update the jvm options on /etc/elasticsearch/jvm.options by adding the space to depending on your ram :
+
+-Xms Minimum heap size.
+
+-Xmx Maximum heap size.
+
+I will allocate 512mbs to mine
+
+“m” for MBs “g” for GBs
+
+
+Next start and enable Elasticsearch to run on system boot;
+
+systemctl enable --now elasticsearch
+Confirm the Elasticsearch port is opened;
+
+ss -altnp | grep 9200
+
+Confirm the Elasticsearch port is running
+
+systemctl status elasticsearch
+
+Install Kibana 7.10.2 on Ubuntu
+To install kibana, run the following command:
+
+apt install kibana=7.10.2
+Next, we configure Kibana to listen on this host IP address, run the command below
+
+sed -i '/server.host:/s/^#//;s/localhost/192.168.56.124/' /etc/kibana/kibana.yml
+You can also use a text editor and edit it manually by uncommenting the following line on the /etc/kibana/kibana.yml file as shown in the image below:
+
+
+Next start and enable Kibana to run on system boot:
+
+systemctl enable --now kibana
+Confirm the Kibana port is opened after a short while by running the following command:
+
+ss -altnp | grep 5601
+Open Kibana port on firewall;
+
+ufw allow 5601/tcp
+Install Filebeat on Ubuntu
+apt install filebeat=7.10.2 -y
+Enable it to run on boot;
+
+systemctl enable filebeat
+Now that we have ELK Stack installed, we will go ahead to installing the wazuh server.
+
+Installing Wazuh Server
+To start we need to Add the Wazuh Repository
+
+Install the following packages if missing.
+Install the GPG key.
+Add the repository.
+apt install curl apt-transport-https unzip wget libcap2-bin software-properties-common lsb-release gnupg2
+curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | gpg --dearmor > /etc/apt/trusted.gpg.d/wazuh.gpg
+echo "deb https://packages.wazuh.com/4.x/apt stable main" > /etc/apt/sources.list.d/wazuh.list
+Update the packages information by running the following command:
+
+apt-get update
+After you have done all the above, we now can install wazuh server, we do so by running the following command:
+
+apt -y install wazuh-manager
+After successful installation of the wazuh server, we will go ahead and enable it as well as start the server.
+
+This will be by running the following commands:
+
+systemctl daemon-reload
+systemctl enable wazuh-manager
+systemctl start wazuh-manager
+After this has been successfully executed, we need to check the status of the wazuh server by running the following command:
+
+systemctl status wazuh-manager
+The figure below shows the expected output for the command above
+
+
+The next step will be to enable wazuh port via the firewall.
+
+This is by running the following command:
+
+ufw allow 1514/tcp
+At this point we have our wazuh Server installed and running. The next step will be to integrate wazuh with ELK Stack
+
+Integrate Wazuh Manager with ELK Stack
+We will begin by installing Wazuh Manager Kibana App plugin
+
+chown -R kibana: /usr/share/kibana/plugins
+Ensure the plugin version to install is compatible with the currently installed version of ELK stack as well as the Wazuh server installed.
+
+sudo -u kibana /usr/share/kibana/bin/kibana-plugin install https://packages.wazuh.com/4.x/ui/kibana/wazuh_kibana-4.3.5_7.10.2-1.zip
+
+Create Wazuh Kibana data directory and set the ownership to kibana user.
+
+mkdir /usr/share/kibana/data
+chown -R kibana: /usr/share/kibana/data
+Restart Kibana;
+
+systemctl restart kibana
+Configure Filebeat for Wazuh Manager
+
+Make a backup of the default configuration file and replace it with the following configs.
+
+mv /etc/filebeat/filebeat.{yml,stock}
+Paste the following configurations by running the following command:
+
+cat > /etc/filebeat/filebeat.yml << ‘EOL’
+output.elasticsearch:
+hosts: [“localhost:9200”]
+setup.template.json.enabled: true
+setup.template.json.path: ‘/etc/filebeat/wazuh-template.json’
+setup.template.json.name: ‘wazuh’
+setup.ilm.overwrite: true
+setup.ilm.enabled: false
+filebeat.modules:
+- module: wazuh
+alerts:
+enabled: true
+archives:
+enabled: false
+logging.level: info
+logging.to_files: true
+logging.files:
+path: /var/log/filebeat
+name: filebeat
+keepfiles: 7
+permissions: 0644
+EOL
+Install Filebeat Wazuh Module:
+wget -qO- https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.1.tar.gz \ | tar -xz -C /usr/share/filebeat/module/
+Download Wazuh alerts Elasticsearch template:
+
+wget -O /etc/filebeat/wazuh-template.json \ https://raw.githubusercontent.com/wazuh/wazuh/4.2/extensions/elasticsearch/7.x/wazuh-template.json
+Test Filebeat config by running the following command:
+
+filebeat test config
+This should return : Config OK
+
+Test Filebeat outputby running the following command:
+
+filebeat test output
+The output should be:
+
+
+Accessing Kibana Web Interface
+
+You can now access Kibana via the url
+
+http://<server-IP-or-hostname>:5601
+
+
+Once you click on wazuh, your landing page should be as shown below:
+
+
+The total agents are zero because we don’t have any agents installed yet.
+
+Now that you have wazuh manager up and running, you realize that every time you load ELK you are taken to /app/home page, for you to have wazuh as the default page, you need to add the following configuration on
+
+/etc/kibana/kibana.yml
+
+server.defaultRoute: “/app/wazuh”
+Restart Kibana to pick the changes by running
+
+Systemctl restart kibana
+Once you load the link again it should redirect you to the defaut wazuh page.
+
+Reference: wazuh.com
+
+Author: Restercuter Nyawira.
+
+SOC Analyst
+
+
+
