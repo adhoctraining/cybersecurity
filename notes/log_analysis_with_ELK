@@ -1,0 +1,68 @@
+ntroduction to log analysis with ELK (Elasticsearch)
+In this story, I introduce the basics of log analysis and the main concepts of ELK.
+
+Log analysis helps to diagnose problems and to reduce the resolution time.
+
+Logs come mainly from OS (Operating Systems), applications, and network devices. Many logs are unstructured data (example: system logs, CPU data, configuration files, …).
+
+They are usually stored in a hard drive or sent to a log collector.
+
+Interpretation of the log messages needs to take into account the context.
+
+To analyze logs, you need identify root causes and build counter measures to reduce the risks.
+
+Architecture
+ELK (Elasticsearch Logstash Kibana) is based on three open source:
+
+Logstash: it collects, transforms, and routes log entries;
+Elasticsearch: it stores and allows to search logs;
+Kibana: is allows to visualize and analyze logs.
+Beats
+Beats are lightweight data shippers: they capture data (logs, metrics, or network packet data) and send them to Elasticsearch via Logstash.
+
+Main beats are:
+
+AuditBeat: collects data of Linux audit framework and ships the logs;
+FileBeat: tails and ships logs files;
+FunctionBeat: reads and ships events from serverless infrastructure;
+HearBeat: pings remote services (for availability);
+JournalBeat: reads and ships event from Journald;
+MetricBeat: fetches metrics from the OS and services;
+PacketBeat: sniffes packets to monitor the network and applications;
+WinlogBeat: fetches and ships Windows event logs.
+If beats are used with ELK, it’s called Elastic Stack.
+
+Logstash
+Logstash collects data inputs and feeds them to Elasticsearch.
+
+Various types of data and various sources are supported.
+
+Logstash is based on a pipeline:
+
+it gets data from data source (inputs),
+it transforms these inputs by applying rules (filters),
+it sends this result to the endpoint of Elasticsearch.
+Elasticsearch
+Elasticsearch is a distributed search engine and an analytics engine highly flexible. It’s based on a NoSQL database and it’s based on the Lucene search engine.
+
+It provides simple deployment, maximum reliability, and horizontal scalability.
+
+It uses RESTful APIs.
+
+It provides advanced queries to perform detailed analysis. Data are stored centrally for quick search.
+
+An index is a logical namespace. It allows to organize data. An index has one or more shards (5 by default).
+
+A shard is a Lucene index. It’s also a search engine and have zero or more replicas (1 by default).
+
+Kibana
+Kibana allows to visualize results of complex queries on Elasticsearch documents.
+
+The dashboard provides interactive diagrams, geospatial data, timelines, and graphs. Kibana allows to custom graphs.
+
+There are different methods to search data:
+
+Free text searches: search for a string;
+Field-level searches: search for a string within a specific field;
+Logical statements: combine searches into a logical statement;
+Proximity searches: search terms within a specific character proximity.
