@@ -1,0 +1,52 @@
+ID,Task,Command,Description
+1,IP,cmd (as admin) > ipconfig,confirm good ip for dns/dhcp
+2,Clear DNS Cache,ipconfig /flushdns,clear possible dns poison
+3,Hosts,notepad C:\Windows\System32\drivers\etc\hosts,delete bad entries
+4,View Hidden Files,Windows Explorer > View > Hidden/Ext/OS/Drives,good practice
+5,DUO,duo.com > Signup > Weblogin > Install > Auth,Consider duo.com for Auth
+6,Stopping Network Shares,net share /delete somebadshare,delete bad shares
+7,User and Group Config,Control panel > System settings > Users and Groups,
+,,"New Admin PW, Disable Guest, Del Bad Users", This needs development
+,,Check/Remove bad users from Admin Group,
+8,Scheduled Tasks,Start > Task Scheduler > Delete All,Bad guys hide here. Delete all: schtasks /delete /tn * /f
+9,Powershell,Get-PSSessionConfiguration ,Hardening Powershell
+,,Disable-PSRemoting,
+,,Disable-PSSessionConfiguration,
+,,Disable-PSSessionConfiguration -Name *,
+10,Malwarebytes,D/L > Install > Update > Full Scan > Clean,https://www.malwarebytes.com
+11,Removing Unwanted Software,Cpanel > Add Remove > Bad/Suspicious Apps,Consider Spybot for hidden uninstalls:
+,,,https://www.fosshub.com/Spybot-Search-and-Destroy.html
+12,Firewall,"Leave it alone, for now",Better to relying on Network Firewall
+13,Security Policy,After AD policy is setup: gpupdate /force.. Reboot,
+14,ELK Logging,D/L > Copy > Edit winlogbeat.yml,Install Winlogbeat for centralized logging
+,,Run in PowerShell: winlogbeat.exe -c winlogbeat.yml,https://www.elastic.co/downloads/beats/winlogbeat
+15,Policies,Relying on AD Group policy mostly,
+16,Services,Disable unneeded,
+17,Remote Desktop,MyPc Prop > Remote > Adv > Check who can RDP,
+18,Automatic Updating,Ideal but we had to skip,"Takes tooo long to update, when limited on time"
+19,Service Packs,Skip,"Will take tooo long to run updates, and we are limited on time"
+20,Processes and Open Ports,To help monitor/kill connections (also: netstat -ano),https://docs.microsoft.com/en-us/sysinternals/downloads/procmon
+,,,https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview
+21,Alternate Data Streams,Consider doing a scan with ADSSpy,https://www.bleepingcomputer.com/download/ads-spy/
+22,Removing Programs from Startup,Run > msconfig.. Disable bad guys,
+23,Adding and Removing Components,CPanel > Programs > Windows Features on/off,"Remove crap you don’t need: telnet, media, print, games, xps, snmp"
+,,,Look for SMB v1 .. (Eternal Blue exploit)… KEEP Powershell !!
+24,Sticky Keys,CPanel > Ease of Access > Uncheck Sticky Keys,Will prevent an Exploit
+25,User Account Control Configuration,Cpanel > System and Sec > Action > Change UAC,User Account Control Settings … All the way up!
+26,TMP,System Props > Adv > Env Var,Check Path and Temp Folders
+27,Anti-Virus,Consider installing AVG .. Full scan,
+28,Lockdown Legit Apps,Wordpress/Joomla.. Disable upload/extended features,
+,,Login and disable other admin/users,
+,,SQL - Locking down sysadmin,
+,,MySql - mysql_secure_installation..for lockdowns,
+29,Disable Dump File Creation,Cpanel > System > Adv > Startup/Rec > Settings,Write Debugging Info: None
+30,Creating a Restore Point,MyPC > Pro > System Prot > Config Turn On,Didnt need for Event - but good practice
+31,Saved Windows Credentials,Cpanel > User Accts > Manage Creds > Delete,There should be NO saved entries here!! Windows/Web
+32,Internet Options,Tools > Opt > Zones High > Clear SSL,Other things are optional here
+33,Power Settings,Cpanel > System/Sec > Power > Require PW,
+34,Data Execution Prevention,Cpanel > Performance > Adjust Visual > DEP,Data Execution Prevention: Turn on for all except (leave empty)
+35,Malicious and Outdated Drivers,Consider scanning for bad-drivers with Uniblue,Couldn’t find a good d/l for this.. Looks retired
+36,Rootkit Scanning,Consider scanning for rootkits with GMER,http://www.gmer.net/
+37,CCleaner,Consider running a cleanup/reg with Ccleaner,https://www.ccleaner.com
+38,Microsoft Security Baseline Analyzer,Microsoft Baseline Security Analyzer 2.1.1 (2k-2k8r),https://www.microsoft.com/en-us/download/details.aspx?id=19892
+,,Microsoft Baseline Security Analyzer 2.3,https://www.techspot.com/downloads/3886-microsoft-baseline-security-analyzer.html
