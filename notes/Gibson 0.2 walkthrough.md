@@ -11,4 +11,5 @@ Let’s see what Gibson has in store for us!
 YouTube video
 https://www.youtube.com/watch?v=o7mFqAcnpjI&t=778s
 
-
+Another writeup
+https://isec.ne.jp/wp-content/uploads/2017/09/43Gibson-Vulnhub.pdf
