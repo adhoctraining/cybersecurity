@@ -20,3 +20,13 @@ Requirements
  ## Linux: How to install certain old version of a software via apt-get
   sudo apt-get install <pkg_name>=<pkg_version>
  
+
+## WinterMute: 1
+A new OSCP style lab involving 2 vulnerable machines, themed after the cyberpunk classic Neuromancer - a must read for any cyber-security enthusiast. This lab makes use of pivoting and post exploitation, which I've found other OSCP prep labs seem to lack. The goal is the get root on both machines. All you need is default Kali Linux.
+
+I'd rate this as Intermediate. No buffer overflows or exploit development - any necessary password cracking can be done with small wordlists. It's much more related to an OSCP box vs a CTF. I've tested it quite a bit, but if you see any issues or need a nudge PM me here.
+
+Virtual Box Lab setup instructions are included in the zip download, but here's a quick brief:
+
+Straylight - simulates a public facing server with 2 NICS. Cap this first, then pivot to the final machine. Neuromancer - is within a non-public network with 1 NIC. Your Kali box should ONLY be on the same virtual network as Straylight.
+This works better with VirtualBox rather than VMware
