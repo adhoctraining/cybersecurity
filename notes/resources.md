@@ -1,4 +1,21 @@
 # Resources
+## Exploits
+### CVE 2021-4034 pnwkit vulnerability
+A local privilege escalation vulnerability was found on polkit's pkexec utility. The pkexec application is a setuid tool designed to allow unprivileged users to run commands as privileged users according predefined policies. The current version of pkexec doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. An attacker can leverage this by crafting environment variables in such a way it'll induce pkexec to execute arbitrary code. When successfully executed the attack can cause a local privilege escalation given unprivileged users administrative rights on the target machine. 
+### Links:
+[Dangerous Code Hidden in Plain Sight for 12 years](https://www.youtube.com/watch?v=eTcVLqKpZJc&list=TLPQMDcwOTIwMjLhZdP9QflkTg&index=6) (YouTube)
+
+https://github.com/PwnFunction/CVE-2021-4034
+
+## Enumeration
+### NMAP
+[Introduction To Pentesting - Enumeration](https://www.youtube.com/watch?v=WvSEkPU1n0I)
+### SMB
+[Nmap - SMB Enumeration](https://www.youtube.com/watch?v=5kLPfVsOxzY)
+
+## OSCP Vids
+[elevate cyber](https://www.youtube.com/channel/UCcHAyzVBPtV6i_rhqBPoA6w/playlists)
+>This an excellent set of playlists for showinf tools useful for the OSCP exam
 ## Topics
 * [Introduction to Intrusion Detection](https://www.youtube.com/watch?v=VPLSIsRegFI)
 * [Introduction to Firewalls with Iptables (part 1)](https://www.youtube.com/watch?v=qRJhnf49Iss)
