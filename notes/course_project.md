@@ -30,3 +30,13 @@ Virtual Box Lab setup instructions are included in the zip download, but here's 
 
 Straylight - simulates a public facing server with 2 NICS. Cap this first, then pivot to the final machine. Neuromancer - is within a non-public network with 1 NIC. Your Kali box should ONLY be on the same virtual network as Straylight.
 This works better with VirtualBox rather than VMware
+### Download
+>  Please remember that VulnHub is a free community resource so we are unable to check the machines that are provided to us. Before you download, please read our FAQs sections dealing with the dangers of running unknown VMs and our suggestions for “protecting yourself and your network. If you understand the risks, please download!
+
+    Wintermute-v1.zip (Size: 2.4 GB)
+    Download: https://drive.google.com/open?id=1bHgdx0iI24jv7MDzKcrIPtd9rVFaVokR
+    Download (Mirror): https://download.vulnhub.com/wintermute/Wintermute-v1.zip
+    Download (Torrent): https://download.vulnhub.com/wintermute/Wintermute-v1.zip.torrent   (
+
+    Magnet)
+
