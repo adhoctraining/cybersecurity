@@ -6,6 +6,7 @@ Open the command prompt and enter systeminfo.exe > c:\Desktop\systeminfo.txt.
 <p>
 
 - Host Name:                 LAPTOP-4P71EFU4
+- password:                  1977        
 - OS Name:                   Microsoft Windows 10 Home
 - OS Version:                10.0.19044 N/A Build 19044
 - OS Manufacturer:           Microsoft Corporation
@@ -81,3 +82,11 @@ Things to look at regarding a slow computer:
 - run prefetch - (deleted them all)
 
 reboot
+### Kamron's pc
+- ASUS X555Q
+- password: 1308737
+> The laptop has a cracked bezeland damaged hinge on left side from being dropped.
+  This has result in increasing damage to the top of the laptop everytime it is opened and closed.
+  Additionally, the system is rebooting at times and sytems to have a problem finding the boot drive.
+ Error message: reboot and select proper boot device or insert boot media in selected boot device
+  and press a key.
