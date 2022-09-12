@@ -83,8 +83,11 @@ Things to look at regarding a slow computer:
 
 reboot
 ### Kamron's pc
+  09.11.2020
 - ASUS X555Q
 - password: 1308737
+- AMD A12-9720P Processor 2.7 GHz (2M Cache, up to 3.6 GHz, 4 cores)
+- 8 gig ram  
 > The laptop has a cracked bezeland damaged hinge on left side from being dropped.
   This has result in increasing damage to the top of the laptop everytime it is opened and closed.
   Additionally, the system is rebooting at times and sytems to have a problem finding the boot drive.
