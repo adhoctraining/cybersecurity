@@ -40,3 +40,17 @@ This works better with VirtualBox rather than VMware
 
     Magnet)
 
+### Lesson #1
+
+Watch: [Inside the Underground Markets For Your Stolen Credit Cards🎙Darknet Diaries Ep. 32: The Carder](https://www.youtube.com/watch?v=AzOymxr7_SA)
+What you will learn:
+* Port number for remote access
+* A method used used in stealing credit cards
+* The use of the darknet for reselling stolen cards
+* A role of the secret service
+
+### Class Discussion
+* Why do you think the Secret Service kept Roman's laptop powered up when it was confiscated during travel?
+* What is slack space?
+* Why so you think the Secret Service through the rcycle bin of Roman's PC.
+The best way to understand 
