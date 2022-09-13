@@ -42,7 +42,7 @@ This works better with VirtualBox rather than VMware
 
 ### Lesson #1
 
-Watch: [Inside the Underground Markets For Your Stolen Credit Cards🎙Darknet Diaries Ep. 32: The Carder](https://www.youtube.com/watch?v=AzOymxr7_SA)
+Watch: [Inside the Underground Markets For Your Stolen Credit Cards🎙Darknet Diaries Ep. 32 - The Carder](https://www.youtube.com/watch?v=AzOymxr7_SA)
 What you will learn:
 * Port number for remote access
 * A method used used in stealing credit cards
