@@ -42,9 +42,9 @@ This works better with VirtualBox rather than VMware
 
 ### Lesson #1
 
-Watch: [Inside the Underground Markets For Your Stolen Credit Cards🎙Darknet Diaries Ep. 32 - The Carder](https://www.youtube.com/watch?v=AzOymxr7_SA)
+Watch: [Inside the Underground Markets For Your Stolen Credit Cards Darknet Diaries Ep. 32 - The Carder](https://www.youtube.com/watch?v=IitFuPm_sb4)
 What you will learn:
-* Port number for remote access
+* Remote access port number (3389)
 * A method used used in stealing credit cards
 * The use of the darknet for reselling stolen cards
 * A role of the secret service
@@ -54,3 +54,45 @@ What you will learn:
 * What is slack space?
 * Why so you think the Secret Service through the rcycle bin of Roman's PC.
 The best way to understand 
+
+
+### Lesson #2
+Watch: [Ep 13: Carna Botnet](https://www.youtube.com/watch?v=AzOymxr7_SA)
+What you will learn:
+* The use of open source intel (OSINT)
+* Telnet port number
+* ssH port number
+* What is OSINT
+* What is a botnet
+* How botnets are used by hackers?
+* Botnet demo
+* Botnet are illegal and you will get caught?
+
+#### Class Discussion
+* Why was the use of the Botnet by the researcher illega?
+* Thought question: What law was violated?
+* What are the top 10 usernames and passwords?
+The best way to understand 
+
+#### Lab Exercise - Telnet(23) vs ssH(21)
+
+### Lesson #4
+#### The Cyber Killchain
+[Ep 10: Misadventures of a Nation State Actor](https://www.youtube.com/watch?v=Oh7hhZjtiMs&t=469s)
+
+### Lesson #5
+#### OSINT
+[OSINT tools to track you down. You cannot hide.](https://www.youtube.com/watch?v=OsY32K1s51Y)
+[Use Skiptracer to Gather License Plate OSINT Data [Tutorial]](https://www.youtube.com/watch?v=Ls0SH9MZMCs)
+
+### Lesson #6
+#### Social Engineering
+[She hacked me!]()
+
+### Palo Alto Firewalls
+#### Building vrnetlab images
+[VM based routers integration](https://containerlab.dev/manual/vrnetlab/)
+[Palo Alto PA-VM](https://containerlab.dev/manual/kinds/vr-pan/)
+[ hellt /vrnetlab](https://github.com/hellt/vrnetlab)
+
+[]()
