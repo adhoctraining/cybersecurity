@@ -23,10 +23,17 @@ Sign up for TryHackMe and do their Pentest+ path. Get your hands dirty with this
 ### Certified Ethical Hacker Practical (Red Team)
 ### RHCSA - Redhat Certified System Administrator (Operating System)
 Setting up a lab to study for your RHCSA  or your RHCE is very important step in learning at your own pace and ultimately passing the exam.
+
+[Red Hat Certified System Administrator (RHCSA) exam ](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=Objectives)
+
 [RHCSA Exam Full Course](https://www.youtube.com/playlist?list=PLlr7wO747mNrUoTuXhZ0REJw3hL4oWvLm)
 
 [Setting up your RHCSA Lab](https://linuxvaults.com/rhcsa-lab-setup/)
 
+[Getting Started with Podman (Docker Alternative) on Rocky Linux](https://www.howtoforge.com/getting-started-with-podman-on-rocky-linux/)
+
+[Access a shell prompt and issue commands with correct syntax](https://thetechcorner.org/?p=659)
+* This site contains a series of articles regarding the exam.
 ### Exam AZ-800: Administering Windows Server Hybrid Core Infrastructure (Operating System)
 I took the plunge and completed the AZ-800: Administering Windows Server Hybrid Core Infrastructure (beta) exam this morning (day after release). It was not as hard as I expected overall however there were some sections I could really have studied more on. My pool of questions really seemed to focus on the following:
 
