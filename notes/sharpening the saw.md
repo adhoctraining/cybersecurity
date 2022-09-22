@@ -34,6 +34,7 @@ Setting up a lab to study for your RHCSA  or your RHCE is very important step in
 
 [Access a shell prompt and issue commands with correct syntax](https://thetechcorner.org/?p=659)
 * This site contains a series of articles regarding the exam.
+
 ### Exam AZ-800: Administering Windows Server Hybrid Core Infrastructure (Operating System)
 I took the plunge and completed the AZ-800: Administering Windows Server Hybrid Core Infrastructure (beta) exam this morning (day after release). It was not as hard as I expected overall however there were some sections I could really have studied more on. My pool of questions really seemed to focus on the following:
 
@@ -58,6 +59,9 @@ I did a full write up of my experience here: (my blog) https://ourcloudnetwork.c
 Microsoft AZ-800 (Administering Windows Server Hybrid Core Infrastructure) Course: https://www.youtube.com/watch?v=EkWLn06OiXY&list=PLc6LqxQFwub8sskcc3_UqaDtnw-Qp-yPD
 
 https://techcommunity.microsoft.com/t5/itops-talk-blog/az-800-study-guide-administering-windows-server-hybrid-core/ba-p/2736091
+
+[Azure Active Directory Labs Series – AD Connect](https://vincentlauzon.com/2016/09/14/azure-active-directory-labs-series-ad-connect/)
+
 ### Blue Team Level 1 (Blue Team)
 ### JunOS Network Associate (Networking)
 ### eJPT (Red Team)
