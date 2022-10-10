@@ -1,40 +1,60 @@
 
 # Book 2 Fundamentals of Cybersecurity
-## Content
-What is Cybersecurity
+
+1.0 What is Cybersecurity
+
 Cybersecuerity is the techniques, process, designs and archectures used in securring devices, networks and data from unauthrized access.
 
-Types of Security
-  Information Security
-  Operation Security
-  Network Security
-    Threat model
-	- Intercept packets
-	- craft packets
-	- inject packets
-	Firewalls
-	- packet filtering
-	- stateful
-	- proxy
-  Business Continuity
-  Application Security
-  Cloud Security
-  Internet of Things Security
-  Mobile Security	
+1.1 Types of Security
 
-Information Assurance
-  CIA Triad
-    Confidentiality - access of data by an authorizaed user
-    Integrity - assuures that information has not been tampered with.
-    Availability - insures that data is always availability
-    Authorization
-    Authentication
-    Accounting
+1.11 Information Security
+ 
+1.12 Operation Security
 
-  Vulnerability, threats and risk
-    Reason for vulnerabilites
-      Complexity
-      Design flaws
+1.13 Network Security
+
+1.13.1 Threat model
+   * Intercept packets
+   * craft packets
+   * inject packets
+   * Firewalls
+     * packet filtering
+     * stateful
+     * proxy
+
+1.30 Business Continuity
+
+1.40 Application Security
+
+1.50- Cloud Security
+
+1.60 Internet of Things Security
+
+1.70 Mobile Security	
+
+2.0 Information Assurance
+
+2.1 CIA Triad
+
+2.1.1 Confidentiality - access of data by an authorizaed user
+    
+2.1.2 Integrity - assuures that information has not been tampered with.
+
+2.1.3 Availability - insures that data is always availability
+
+2.1.4 Authorization
+
+2.1.5 Authentication
+
+2.1.6 Accounting
+
+2.2 Vulnerability, threats and risk
+
+2.2.1 Reason for vulnerabilites
+
+2.2.2 Complexity
+
+2.2.3Design flaws
       User data input
       Poor system configuration
       Unsecured connectivity
