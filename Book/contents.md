@@ -1,19 +1,19 @@
 
 # Book 2 Fundamentals of Cybersecurity
 
-1.0 What is Cybersecurity
+## 1.0 What is Cybersecurity
 
 Cybersecuerity is the techniques, process, designs and archectures used in securring devices, networks and data from unauthrized access.
 
-1.1 Types of Security
+### 1.1 Types of Security
 
-1.11 Information Security
- 
-1.12 Operation Security
+1.1.1 Information Security
 
-1.13 Network Security
+1.1.2 Operation Security
 
-1.13.1 Threat model
+1.1.3 Network Security
+
+1.1.3.1 Threat model
    * Intercept packets
    * craft packets
    * inject packets
@@ -21,20 +21,20 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
      * packet filtering
      * stateful
      * proxy
+    
+1.1.4 Business Continuity
 
-1.30 Business Continuity
+1.1.5 Application Security
 
-1.40 Application Security
+1.1.6- Cloud Security
 
-1.50- Cloud Security
+1.1.7 Internet of Things Security
 
-1.60 Internet of Things Security
+1.1.8 Mobile Security	
 
-1.70 Mobile Security	
+## 2.0 Information Assurance
 
-2.0 Information Assurance
-
-2.1 CIA Triad
+### 2.1 CIA Triad
 
 2.1.1 Confidentiality - access of data by an authorizaed user
     
@@ -48,127 +48,223 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 
 2.1.6 Accounting
 
-2.2 Vulnerability, threats and risk
+### 2.2 Vulnerability, threats and risk
 
 2.2.1 Reason for vulnerabilites
 
 2.2.2 Complexity
 
-2.2.3Design flaws
-      User data input
-      Poor system configuration
-      Unsecured connectivity
+2.2.3 Design flaws
 
-Cybercrime and Consequences
-  Data Breaches
-  Federal Laws
-  Indictments
-  Types of Hackers
-    White Hat Hackers
-    Black Hat Hackers
-    Grey Hat Hackers
-  Threat Actors
-    Nation States
-      Russia
-      China
-      Iran
-      North Korea
-      United States
-    Cyberterrorism
-    Script Kiddies
-    Hacktivists
-     Anonymous 
+2.2.4 User data input
 
-Open Systems Interconnection OSI
-  Ports and Protocols
-    Layer 7 Application
-    Layer 6 Presentation
-    Layer 5 Session
-    Layer 4 Transport
-    Layer 3 Network
-    Layer 2 Data Link
-    Layer 1 Physcal
+2.2.5 Poor system configuration
 
-  Threat Vectors
-    Layer 7 Application
-    Layer 6 Presentation
-    Layer 5 Session
-    Layer 4 Transport
-    Layer 3 Network
-    Layer 2 Data Link
-    Layer 1 Physcal
+2.2.6 Unsecured connectivity
+
+## 3.0 Cybercrime and Consequences
+
+3.1 Data Breaches
   
-  Countermeasures
-    Layer 7 Application
-    Layer 6 Presentation
-    Layer 5 Session
-    Layer 4 Transport
-    Layer 3 Network
-    Layer 2 Data Link
-    Layer 1 Physcal
-
-HTTP response codes
-
-
-Cryptography
- Encryption/Decryption
-   Asymmectric
-   Symmetric
- Hashing 
-  MD5
-  SHA256
- Codes and Ciphers
- IPSEC
- SSL
- TSL
- SSH
-
-Tactic, Techniques and Procedured (TTP)
-  Mitre&ATTACK Framework
-  Ethical hacking
-    Recon
-    Scanning and enumerating
-    Gaining access
-    maintaining access
-    covering your tracks
+3.2 Federal Laws
+  
+3.3 Indictments
+  
+3.4 Types of Hackers
+  
+3.4.1 White Hat Hackers
     
-  The cyber kill chain
+3.4.2  Black Hat Hackers
+    
+3.4.3 Grey Hat Hackers
+    
+3.5 Threat Actors
 
-Attacks and vulnerabilities
-  Malware
-    Viruses
-    Trojan
-    Worms
-    Phishing  
-	Ransomware
-	Adware
-	Spyware
-	Rootkit
-	Keyloggers
-	Bots/Botnets
-    DNS cache poisoning
-  Address spoofing
-    IP address
-	MAC Address
-  HTTPS Attacks
-    Buffer overflow
-	Session hijacking
-	SQL injection
-	Cross site scripting
-	Input validation
-	Impersonation
-	URL interpretation
-  Social Engineering (hacking is not about hacking computers, its about hacking people)
-    Phishing and Pharming
-  DDOS
-  Man in the Middle
-  Password Attacks
-    Brute force
-	Dictionary
-	Hybrid
-  APT
-  Shoulder surfacing/Easedropping
-  Drive by download
+3.5.1 Nation States
+    
+3.5.2 Russia
+    
+3.5.3 China
+    
+3.5.4 Iran
+    
+3.5.5 North Korea
+    
+3.5.6 United States
+    
+3.5.7 Cyberterrorism
+    
+3.5.8 Script Kiddies
+    
+3.5.9 Hacktivists
+    
+3.5.10 Anonymous 
+
+## 4.0 Ports and Protocols
+
+4.1 Layer 7 Application
+
+4.2 Layer 6 Presentation
+
+4.3 Layer 5 Session
+
+4.4 Layer 4 Transport
+
+4.5 Layer 3 Network
+
+4.6 Layer 2 Data Link
+
+4.7 Layer 1 Physcal
+
+## 5.0 Threat Vectors
+
+5.1 Layer 7 Application
+
+5.2 Layer 6 Presentation
+
+5.3 Layer 5 Session
+
+5.4 Layer 4 Transport
+
+5.5 Layer 3 Network
+
+5.6 Layer 2 Data Link
+
+5.7 Layer 1 Physcal
+
+## 6.0  Countermeasures
+   
+6.1 Layer 7 Application
+
+6.2 Layer 6 Presentation
+
+6.3 Layer 5 Session
+
+6.4 Layer 4 Transport
+
+6.5 Layer 3 Network
+
+6.6 Layer 2 Data Link
+
+6.7 Layer 1 Physcal
+
+## 7.0 Cryptography
+
+7.1 Encryption/Decryption
+
+   7.1.1 Asymmectric
+   
+   7.1.2 Symmetric
+
+7.2 Hashing 
+
+7.2.1 MD5
+
+7.2.2 SHA256
+ 
+7.3 Codes and Ciphers
+
+7.4 IPSEC
+
+7.5 SSL
+ 
+7.6 TSL
+
+## 8.0 Tactic, Techniques and Procedured (TTP)
+
+8.1 Mitre & ATTACK Framework
+
+8.2 Ethical hacking
+
+8.2.1 Recon
+
+8.2.2 Scanning and enumerating
+
+8.2.3 Gaining access
+
+8.2.4 Maintaining access
+
+8.2.5 Covering your tracks
+    
+8.3 The cyber kill chain
+
+## 9.0 Attacks - Malware
+
+9.1 Viruses
+
+9.2 Trojan
+
+9.3 Worms
+
+9.4 Ransomware
+
+9.5 Adware
+
+9.6 Spyware
+
+9.7 Rootkit
+
+9.8 Keyloggers
+
+## 10.0 Attacks - Poisoning and spoofing
+
+10.2 DNS cache poisoning
+
+10.3 Address spoofing
+
+10.3.1 IP address
+
+10.3.2 MAC Address
+  
+## 11.0 Attacks - Web application hacking
+
+11.1 HTTP response codes
+
+11.2 Session hijacking
+
+11.3 SQL injection
+
+11.4 Cross site scripting
+
+11.5 Input validation
+
+11.6 Impersonation
+
+11.7 URL interpretation
+
+## 12.0 Attacks
+
+12.1 Bots/Botnets
+
+12.2 Buffer overflow
+
+12.3 DDOS
+
+12.4 Man in the Middle
+
+12.5 Password Attacks
+
+12.5.1 Brute force
+	
+12.5.2 Dictionary
+	
+12.5.3 Hybrid
+  
+12.6 APT
+
+## 13.0 Social Engineering (hacking is not about hacking computers, its about hacking people)
+
+Phishing and Pharming
+
+Shoulder surfacing
+
+Easedropping
+
+Hitchhiking
+
+## 14.0 Linux tools
+
+## 15.0 Cybersecurity lab
   
 ### Lab: Lab: How to Hack a Website with Basic HTML Coding: (https://www.wikihow.com/Hack-a-Website-with-Basic-HTML-Coding)
 Written by Nicole Levine, MFA
