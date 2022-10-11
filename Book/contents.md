@@ -9,6 +9,8 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 
 1.1.1 Information Security
 
+Information security is the protection of data from unauthorized access.
+
 1.1.2 Operation Security
 
 1.1.3 Network Security
@@ -21,12 +23,17 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
      * packet filtering
      * stateful
      * proxy
+     * Next generation
+
+1.1.3.2 Unified Threat Management
+
+UTM is made of router, switch, IDS, IPS, VPN endpoints and gatekeeper functionality.
     
 1.1.4 Business Continuity
 
 1.1.5 Application Security
 
-1.1.6- Cloud Security
+1.1.6 Cloud Security
 
 1.1.7 Internet of Things Security
 
@@ -48,19 +55,29 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 
 2.1.6 Accounting
 
+2.1.7 Auditing
+
+2.1.8 Identification
+
 ### 2.2 Vulnerability, threats and risk
 
-2.2.1 Reason for vulnerabilites
+2.2.1 Common vulnerabilites
+  * Complexity
+  * Open access points
+  * Rogue access points
+  * Outdated or unpatched software
+  * Design flaws
+  * User data input
+  * Poor system configuration
+  * Unsecured connectivity
+  * Physical access to server room or network closet
 
-2.2.2 Complexity
+2.2.2 Social Engineering (hacking is not about hacking computers, its about hacking people)
 
-2.2.3 Design flaws
-
-2.2.4 User data input
-
-2.2.5 Poor system configuration
-
-2.2.6 Unsecured connectivity
+  * Phishing, Whaling and Pharming
+  * Shoulder surfacing
+  * Easedropping
+  * Hitchhiking
 
 ## 3.0 Cybercrime and Consequences
 
@@ -170,7 +187,7 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
  
 7.6 TSL
 
-## 8.0 Tactic, Techniques and Procedured (TTP)
+## 8.0 Tactic, Techniques and Procedures (TTP)
 
 8.1 Mitre & ATTACK Framework
 
@@ -188,7 +205,7 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
     
 8.3 The cyber kill chain
 
-## 9.0 Attacks - Malware
+## 9.0 Threats - Malware
 
 9.1 Viruses
 
@@ -206,7 +223,7 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 
 9.8 Keyloggers
 
-## 10.0 Attacks - Poisoning and spoofing
+## 10.0 Threats - Poisoning and spoofing
 
 10.2 DNS cache poisoning
 
@@ -216,7 +233,7 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 
 10.3.2 MAC Address
   
-## 11.0 Attacks - Web application hacking
+## 11.0 Threats - Web application hacking
 
 11.1 HTTP response codes
 
@@ -232,7 +249,7 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 
 11.7 URL interpretation
 
-## 12.0 Attacks
+## 12.0 Threats
 
 12.1 Bots/Botnets
 
@@ -251,16 +268,6 @@ Cybersecuerity is the techniques, process, designs and archectures used in secur
 12.5.3 Hybrid
   
 12.6 APT
-
-## 13.0 Social Engineering (hacking is not about hacking computers, its about hacking people)
-
-Phishing and Pharming
-
-Shoulder surfacing
-
-Easedropping
-
-Hitchhiking
 
 ## 14.0 Linux tools
 
